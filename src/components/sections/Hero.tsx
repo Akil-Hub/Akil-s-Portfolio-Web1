@@ -12,26 +12,23 @@ import { AnimatedBorderButton } from "@/src/components/ui/AnimatedBorderButton";
 import { GiThumbDown } from "react-icons/gi";
 import { LiaLinkedin } from "react-icons/lia";
 import { BsTwitter } from "react-icons/bs";
+import Image from "next/image";
+import Link from "next/link";
 
 const skills = [
   "React",
   "Next.js",
-  "TypeScript",
-  "Node.js",
-  "GraphQL",
-  "PostgreSQL",
+  "javaScript",
   "MongoDB",
-  "Redis",
-  "Docker",
-  "AWS",
   "Vercel",
   "Tailwind CSS",
-  "Prisma",
-  "Jest",
-  "Cypress",
   "Figma",
   "Git",
   "GitHub Actions",
+  'Node.js',
+  'ShadCn',
+  'GSAP',
+  'AOS'
 ];
 
 export const Hero = () => {
@@ -39,12 +36,13 @@ export const Hero = () => {
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Bg */}
       <div className="absolute inset-0">
-        <img
+        <Image
           src="/hero-bg.jpg"
           alt="Hero image"
+          fill
           className="w-full h-full object-cover opacity-40"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background" />
+        <div className="absolute inset-0 bg-linear-to-b from-background/20 via-background/80 to-background" />
       </div>
 
       {/* Green Dots */}
@@ -74,7 +72,7 @@ export const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Software Engineer • React Specialist
+                Web Developer • React / Next.js Specialist
               </span>
             </div>
 
@@ -90,21 +88,23 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Pedro Machado — a software engineer specializing in
-                React, Next.js, and TypeScript. I build scalable, performant web
+                Hi, I'm Akil Anjum Mahi — a Web Developer specializing in
+                React, Next.js, and javaScript. I build scalable, performant web
                 applications that users love.
               </p>
             </div>
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
+             <Link href={'#contact'}> <Button size="lg">
                 Contact Me <ArrowRight className="w-5 h-5" />
-              </Button>
+              </Button></Link>
+             <a href="/resume.pdf" download={'Akil_Anjum_Mahi.resume.pdf'}>
               <AnimatedBorderButton>
                 <Download className="w-5 h-5" />
                 Download CV
               </AnimatedBorderButton>
+             </a>
             </div>
 
             {/* Social Links */}
@@ -112,7 +112,7 @@ export const Hero = () => {
               <span className="text-sm text-muted-foreground">Follow me: </span>
               {[
                 { icon: GiThumbDown, href: "#" },
-                { icon: LiaLinkedin, href: "#" },
+                { icon: LiaLinkedin, href: "https://www.linkedin.com/in/akilanjumdev/" },
                 { icon: BsTwitter, href: "#" },
               ].map((social, idx) => (
                 <a
@@ -135,18 +135,32 @@ export const Hero = () => {
               from-primary/30 via-transparent 
               to-primary/10 blur-2xl animate-pulse"
               />
-              <div className="relative glass rounded-3xl p-2 glow-border">
-                <img
-                  src="/profile-photo.jpg"
-                  alt="Pedro Machado"
-                  className="w-full aspect-[4/5] object-cover rounded-2xl"
+              <div className="relative glass rounded-3xl p-2 glow-border w-full h-full">
+                
+                <Image
+                  src="/akilMahi2.png"
+                  alt="Akil_Anjum_Mahi"
+               
+                 width={300}
+                 height={500}
+                  className="w-full h-full  aspect-4/5 object-contain rounded-2xl"
                 />
-
+             
                 {/* Floating Badge */}
-                <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
-                  <div className="flex items-center gap-3">
+                <div className="absolute -bottom-4  glass rounded-xl px-5
+                 w-108 py-3 animate-float">
+                  <div className="flex items-center gap-8 ">
+
+                   <div className="flex items-center gap-4">
+                     
                     <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                    <span className="text-sm font-medium">
+                    <span className="text-2xl  font-serif italic font-medium ">
+                      Akil Anjum Mahi
+                    </span>
+                   </div>
+
+
+                    <span className="text-md font-medium italic">
                       Available for work
                     </span>
                   </div>

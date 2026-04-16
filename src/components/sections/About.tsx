@@ -49,14 +49,16 @@ export const About = () => {
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I'm a passionate software engineer with over 5 years of
-                experience crafting digital products that make a difference. My
-                journey started with a curiosity for how things work on the web,
-                and it has evolved into a deep expertise in modern frontend
-                technologies.
+                I'm a passionate Front-End Developer with strong skills in HTML,
+                CSS, JavaScript (ES6+), React.js, and Next.js, focused on
+                building responsive, user-friendly, and high-performance web
+                applications. Also brings freelance experience in digital
+                marketing on Fiverr, which strengthened my client communication
+                skills and eagerness to continuously learn and grow as a
+                developer
               </p>
               <p>
-                I specialize in React, Next.js, and TypeScript, building
+                I specialize in React, Next.js, and javaScript, building
                 everything from sleek landing pages to complex enterprise
                 applications. My approach combines technical excellence with a
                 keen eye for design and user experience.

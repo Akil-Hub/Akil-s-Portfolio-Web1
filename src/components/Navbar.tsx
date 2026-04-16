@@ -1,6 +1,7 @@
-'use client'
+"use client";
 import Button from "@/src/components/ui/Button";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const navLinks = [
@@ -35,7 +36,7 @@ export const Navbar = () => {
           href="#"
           className="text-xl font-bold tracking-tight hover:text-primary"
         >
-          PM<span className="text-primary">.</span>
+          AM<span className="text-primary">.</span>
         </a>
 
         {/* Desktop Nav */}
@@ -55,7 +56,9 @@ export const Navbar = () => {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Button size="sm">Contact Me</Button>
+          <Link href={"#contact"}>
+            <Button size="sm">Contact Me</Button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -81,10 +84,10 @@ export const Navbar = () => {
                 {link.label}
               </a>
             ))}
-
-            <Button onClick={() => setIsMobileMenuOpen(false)}>
-              Contact Me
-            </Button>
+            {/* mobile cta */}
+            <Link href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+              <Button>Contact Me</Button>
+            </Link>
           </div>
         </div>
       )}

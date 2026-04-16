@@ -1,43 +1,46 @@
 import { AnimatedBorderButton } from "@/src/components/ui/AnimatedBorderButton";
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 
 const projects = [
   {
-    title: "Fintech Dashboard",
+    title: "Fatro E-Commerce",
     description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
+      "A comprehensive E-Commerce Website with real-time data visualization, Amazing Design,Modern Layout,Fully Responsiveness.",
     image: "/projects/project1.png",
-    tags: ["React", "Typescript", "NodeJS"],
-    link: "#",
-    github: "#",
+    tags: ["React", "javaScript", "Tailwindcss"],
+    link: "https://e-commerce-website1-six.vercel.app/",
+    github: "https://github.com/Akil-Hub/E-Commerce-website1",
   },
+  
   {
-    title: "E-Commerce Platform",
+    title: "Company Growth Booster",
     description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
-    image: "/projects/project2.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-    link: "#",
-    github: "#",
-  },
-  {
-    title: "AI Writing Assistant",
-    description:
-      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
+      "It's a Marketing Website for boosting the growth of any kind fo startUp Companies on Earth.",
     image: "/projects/project3.png",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
-    link: "#",
-    github: "#",
+    tags: ["React", "Boost Traffic", "Framer Motion", "Eye Catching animation"],
+    link: "https://modern-react-website-by-akil.vercel.app/",
+    github: "https://github.com/Akil-Hub/modern-react-website-by-Akil",
   },
   {
-    title: "Project Management Tool",
+    title: "Oribie E-Commerce",
     description:
-      "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
+      "Modern E-commerce website with Add to cart, management, Dynamic Slider,Categorized filter and analytics dashboard.",
+    image: "/projects/project2.png",
+    tags: ["React.js", "Redux-Toolkit", "javaScript", "Tailwind"],
+    link:"https://oribie-e-commerce-website.vercel.app/",
+    github: "https://github.com/Akil-Hub/Oribie-E-Commerce-Website",
+  },
+  {
+    title: "English || জানালা",
+    description:
+      "In this website we can learn so many english words by playing step by step level. It helps to Boost our vocabulary learning",
     image: "/projects/project4.png",
-    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
-    link: "#",
-    github: "#",
+    tags: ["React.js", "javaScript", "DasisyUi"],
+    link: "https://english-janala-word-learning-system.vercel.app/",
+    github: "https://github.com/Akil-Hub/English-Janala-Word-learning-System",
   },
 ];
 
@@ -71,19 +74,21 @@ export const Projects = () => {
           {projects.map((project, idx) => (
             <div
               key={idx}
-              className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1"
+              className="group glass rounded-3xl overflow-hidden animate-fade-in md:row-span-1"
               style={{ animationDelay: `${(idx + 1) * 100}ms` }}
             >
               {/* Image */}
-              <div className="relative overflow-hidden aspect-video">
-                <img
+              <div className="relative overflow-hidden aspect-video pb-6 ">
+                <Image
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  width={600}
+                  height={400}
+                  className=" w-full object-contain transition-transform duration-700 group-hover:scale-110 scale-105   pb-1"
                 />
                 <div
                   className="absolute inset-0 
-                bg-gradient-to-t from-card via-card/50
+                bg-liner-to-t from-card via-card/50
                  to-transparent opacity-60"
                 />
                 {/* Overlay Links */}
@@ -136,10 +141,11 @@ export const Projects = () => {
 
         {/* View All CTA */}
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
+        <Link href={'https://vercel.com/akil-anjum-mahis-projects'}>
           <AnimatedBorderButton>
             View All Projects
             <ArrowUpRight className="w-5 h-5" />
-          </AnimatedBorderButton>
+          </AnimatedBorderButton></Link>
         </div>
       </div>
     </section>
