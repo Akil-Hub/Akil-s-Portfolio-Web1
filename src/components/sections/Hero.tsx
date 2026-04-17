@@ -1,11 +1,4 @@
-import {
-  ArrowRight,
-  ChevronDown,
-
-
-
-  Download,
-} from "lucide-react";
+import { ArrowRight, ChevronDown, Download } from "lucide-react";
 
 import Button from "@/src/components/ui/Button";
 import { AnimatedBorderButton } from "@/src/components/ui/AnimatedBorderButton";
@@ -25,10 +18,10 @@ const skills = [
   "Figma",
   "Git",
   "GitHub Actions",
-  'Node.js',
-  'ShadCn',
-  'GSAP',
-  'AOS'
+  "Node.js",
+  "ShadCn",
+  "GSAP",
+  "AOS",
 ];
 
 export const Hero = () => {
@@ -49,7 +42,7 @@ export const Hero = () => {
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(30)].map((_, i) => (
           <div
-          key={i}
+            key={i}
             className="absolute w-1.5 h-1.5 rounded-full opacity-60"
             style={{
               backgroundColor: "#20B2A6",
@@ -88,23 +81,26 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="md:text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Akil Anjum Mahi — a Web Developer specializing in
-                React, Next.js, and javaScript. I build scalable, performant web
+                Hi, I'm Akil Anjum Mahi — a Web Developer specializing in React,
+                Next.js, and javaScript. I build scalable, performant web
                 applications that users love.
               </p>
             </div>
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300 justify-center md:justify-start">
-             <Link href={'#contact'}> <Button size="lg">
-                Contact Me <ArrowRight className="w-5 h-5" />
-              </Button></Link>
-             <a href="/resume.pdf" download={'Akil_Anjum_Mahi.resume.pdf'}>
-              <AnimatedBorderButton>
-                <Download className="w-5 h-5" />
-                Download CV
-              </AnimatedBorderButton>
-             </a>
+              <Link href={"#contact"}>
+                {" "}
+                <Button size="lg">
+                  Contact Me <ArrowRight className="w-5 h-5" />
+                </Button>
+              </Link>
+              <a href="/resume.pdf" download={"Akil_Anjum_Mahi.resume.pdf"}>
+                <AnimatedBorderButton>
+                  <Download className="w-5 h-5" />
+                  Download CV
+                </AnimatedBorderButton>
+              </a>
             </div>
 
             {/* Social Links */}
@@ -112,7 +108,10 @@ export const Hero = () => {
               <span className="text-sm text-muted-foreground">Follow me: </span>
               {[
                 { icon: GiThumbDown, href: "#" },
-                { icon: LiaLinkedin, href: "https://www.linkedin.com/in/akilanjumdev/" },
+                {
+                  icon: LiaLinkedin,
+                  href: "https://www.linkedin.com/in/akilanjumdev/",
+                },
                 { icon: BsTwitter, href: "#" },
               ].map((social, idx) => (
                 <a
@@ -136,29 +135,28 @@ export const Hero = () => {
               to-primary/10 blur-2xl animate-pulse"
               />
               <div className="relative glass rounded-3xl p-2 glow-border w-full h-full">
-                
                 <Image
-                  src="/akilMahi2.png"
-                  alt="Akil_Anjum_Mahi"
-               
-                 width={300}
-                 height={500}
+                  src="/akilEnhanced7.webp"
+                  alt="Akil Mahi - Frontend Developer based in Dhaka Bangladesh"
+                  width={1980}
+                  height={2553}
+                  quality={97}
+                  priority
                   className="w-full h-full  aspect-4/5 object-contain rounded-2xl"
                 />
-             
+
                 {/* Floating Badge */}
-                <div className="absolute -bottom-4  glass rounded-xl md:px-5 px-2
-                 md:w-108 w-70 py-3 animate-float">
+                <div
+                  className="absolute -bottom-4  glass rounded-xl md:px-5 px-2
+                 md:w-108 w-70 py-3 animate-float"
+                >
                   <div className="flex items-center md:gap-8 gap-5 ">
-
-                   <div className="flex items-center md:gap-4 gap-2">
-                     
-                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                    <span className="md:text-2xl text-base  font-serif italic font-medium ">
-                      Akil Anjum Mahi
-                    </span>
-                   </div>
-
+                    <div className="flex items-center md:gap-4 gap-2">
+                      <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
+                      <span className="md:text-2xl text-base  font-serif italic font-medium ">
+                        Akil Anjum Mahi
+                      </span>
+                    </div>
 
                     <span className="md:text-md text-xs font-medium italic">
                       Available for work
@@ -192,7 +190,7 @@ export const Hero = () => {
              bg-linear-to-l from-background to-transparent z-10"
             />
             <div className="flex animate-marquee">
-              {[...skills,...skills].map((skill, idx) => (
+              {[...skills, ...skills].map((skill, idx) => (
                 <div key={idx} className="flex-shrink-0 px-8 py-4">
                   <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
                     {skill}
