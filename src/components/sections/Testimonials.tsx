@@ -1,39 +1,33 @@
-'use client'
+"use client";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import Image from "next/image";
 import { useState } from "react";
+import { FaStar } from "react-icons/fa";
 
 const testimonials = [
   {
-    quote:
-      "Pedro is one of the most talented engineers I've worked with. His attention to detail and ability to translate complex requirements into elegant solutions is remarkable.",
-    author: "Sarah Chen",
-    role: "CTO, Tech Innovators Inc.",
-    avatar:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
+    quote: "Hard worker....I will hire again.",
+    author: "gamblerspassion",
+    role: "Marketing Agency (USA)",
+    avatar: "/client1.png",
   },
   {
-    quote:
-      "Working with Pedro was a game-changer for our project. He delivered ahead of schedule with code quality that set a new standard for our team.",
-    author: "Michael Rodriguez",
-    role: "Product Manager, Digital Solutions",
-    avatar:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop",
+    quote: `Perfect highly recommend.\n(Order-1)`,
+    author: "imahardthinker",
+    role: "Ship Yard Manager (Nigeria)",
+    avatar: "/client2.png",
   },
   {
-    quote:
-      "Pedro's expertise in React and TypeScript helped us rebuild our entire frontend in record time. His architectural decisions continue to pay dividends.",
-    author: "Emily Watson",
-    role: "Engineering Lead, StartUp Labs",
-    avatar:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
+    quote: `great service, will order again.\n(Order-2)`,
+    author: "imahardthinker",
+    role: "Ship Yard Manager (Nigeria)",
+    avatar: "/client2.png",
   },
   {
-    quote:
-      "Not only is Pedro technically brilliant, but he's also a fantastic communicator and team player. He elevated everyone around him.",
-    author: "David Kim",
-    role: "CEO, Innovation Hub",
-    avatar:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+    quote: `the results were perfect.\n(Order-3)`,
+    author: "imahardthinker",
+    role: "Ship Yard Manager (Nigeria)",
+    avatar: "/client2.png",
   },
 ];
 
@@ -46,7 +40,7 @@ export const Testimonials = () => {
 
   const previous = () => {
     setActiveIdx(
-      (prev) => (prev - 1 + testimonials.length) % testimonials.length
+      (prev) => (prev - 1 + testimonials.length) % testimonials.length,
     );
   };
   return (
@@ -82,7 +76,9 @@ export const Testimonials = () => {
               className="font-serif italic 
             font-normal text-white"
             >
-              amazing people.
+              amazing people{" "}
+              <span className="text-secondary-foreground">Fiverr</span> Work
+              Rating.
             </span>
           </h2>
         </div>
@@ -91,30 +87,83 @@ export const Testimonials = () => {
         <div className="max-w-4xl mx-auto">
           <div className="relative">
             {/* Main Testimonial */}
-            <div className="glass p-8 rounded-3xl md:p-12 glow-border animate-fade-in animation-delay-200">
-              <div className="absolute -top-4 left-8 w-12 h-12 rounded-full bg-primary flex items-center justify-center">
-                <Quote className="w-6 h-6 text-primary-foreground" />
-              </div>
+            <div className="glass p-8 rounded-3xl md:p-12 glow-border animate-fade-in animation-delay-200 flex flex-col md:flex-row justify-center mx-auto gap-10 items-center ">
+              <div className="w-90">
+                <div className="absolute -top-4 left-8 w-12 h-12 rounded-full bg-primary flex items-center justify-center">
+                  <Quote className="w-6 h-6 text-primary-foreground" />
+                </div>
 
-              <blockquote className="text-xl md:text-2xl font-medium leading-relaxed mb-8 pt-4">
-                "{testimonials[activeIdx].quote}"
-              </blockquote>
+                <blockquote className="text-md sm:text-lg md:text-2xl font-medium leading-relaxed mb-8 pt-4 break-all mx-auto md:mx-0 whitespace-pre-wrap">
+                  "{testimonials[activeIdx].quote}"
+                </blockquote>
 
-              <div className="flex items-center gap-4">
-                <img
-                  src={testimonials[activeIdx].avatar}
-                  alt={testimonials[activeIdx].author}
-                  className="w-14 h-14 rounded-full object-cover ring-2 ring-primary/20"
-                />
-                <div>
-                  <div className="font-semibold">
-                    {testimonials[activeIdx].author}
-                  </div>
-                  <div className="text-sm text-muted-foreground">
-                    {testimonials[activeIdx].role}
+                <div className="flex items-center gap-4">
+                  <Image
+                    height={50}
+                    width={50}
+                    src={testimonials[activeIdx].avatar}
+                    alt={testimonials[activeIdx].author}
+                    className=" rounded-full object-cover ring-2 ring-primary/20"
+                  />
+                  <div>
+                    <div className="font-semibold">
+                      {testimonials[activeIdx].author}
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      {testimonials[activeIdx].role}
+                    </div>
                   </div>
                 </div>
               </div>
+
+              {/* rating div */}
+              <article className="flex flex-col gap-2">
+                <section className="flex justify-between  items-center gap-14">
+                  <h3 className=" text-xs sm:text-sm md:text-base">Seller communication level </h3>
+
+                 <div className="flex items-center gap-3">
+                   <span className="flex gap-1 items-center text-amber-400">
+                    <FaStar /> <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                  </span>
+                  <span className="mt-1.5">5</span>
+                 </div>
+                </section>
+                <section className="flex justify-between  items-center gap-14">
+                  <h3 className=" text-xs sm:text-sm md:text-base">Recommend to a friend</h3>
+
+                 <div className="flex items-center gap-3">
+                   <span className="flex gap-1 items-center text-amber-400">
+                    <FaStar /> <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                  </span>
+                  <span className="mt-1.5">5</span>
+                 </div>
+                </section>
+                <section className="flex justify-between  items-center gap-14">
+                  <h3 className=" text-xs sm:text-sm md:text-base">Service as described</h3>
+
+                 <div className="flex items-center gap-3">
+                   <span className="flex gap-1 items-center text-amber-400">
+                    <FaStar /> <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                  </span>
+                  <span className="mt-1.5">5</span>
+                 </div>
+                </section>
+
+
+             
+              </article>
             </div>
 
             {/* Testimonials Navigation */}
@@ -129,7 +178,7 @@ export const Testimonials = () => {
               <div className="flex gap-2">
                 {testimonials.map((_, idx) => (
                   <button
-                  key={idx}
+                    key={idx}
                     onClick={() => setActiveIdx(idx)}
                     className={`w-2 h-2 rounded-full transition-all duration-300 ${
                       idx === activeIdx

@@ -1,38 +1,30 @@
 const experiences = [
   {
-    period: "2022 — Present",
-    role: "Senior Frontend Engineer",
-    company: "Tech Innovators Inc.",
+    period: "2025 — Present",
+    role: "Running MERN courses",
+    company: "Programming Hero",
     description:
-      "Leading frontend architecture for a suite of fintech products. Implemented micro-frontend architecture, reduced bundle size by 40%, and mentored a team of 5 developers.",
-    technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
+      "I have complete the Frontend Development with React course on Creative IT Institute (8 Month). Now I am Learning MERN stack in Programming Hero Institute",
+    technologies: ["React",'Next.js', 'javaScript', "TypeScript", "mongoDB"],
     current: true,
   },
+ 
   {
-    period: "2020 — 2022",
-    role: "Frontend Engineer",
-    company: "Digital Solutions Co.",
+    period: "2024 — 2025",
+    role: "Frontend-Developer ",
+    company: "Munshiganj Polytechnic Institute",
     description:
-      "Built and maintained multiple React applications for enterprise clients. Introduced automated testing practices that improved code coverage to 85%.",
-    technologies: ["React", "Redux", "Jest", "Cypress"],
+      "Designed and developed the main  landing page Munshiganj Polytechnic Institute and full website work is in progress.",
+    technologies: ["React", "Node.js", "React-Router"],
     current: false,
   },
   {
-    period: "2019 — 2020",
-    role: "Junior Developer",
-    company: "StartUp Labs",
+    period: "2022 — 2024",
+    role: "Digital Marketer (Fiverr)",
+    company: "Fiverr Marketplace",
     description:
-      "Contributed to the development of a SaaS platform from MVP to production. Collaborated with designers to implement pixel-perfect UI components.",
-    technologies: ["React", "Node.js", "MongoDB", "AWS"],
-    current: false,
-  },
-  {
-    period: "2018 — 2019",
-    role: "Freelance Developer",
-    company: "Self-Employed",
-    description:
-      "Delivered custom web solutions for small businesses and startups. Built 15+ websites and applications, handling everything from design to deployment.",
-    technologies: ["JavaScript", "PHP", "WordPress", "MySQL"],
+      "Manage digital marketing projects for international clients through Fiverr.Planed and executed online marketing campaigns with social media improving promotions based on client goals.",
+    technologies: ["Facebook", "Instagram", "Ads Campaigns", "Business Promotions"],
     current: false,
   },
 ];
