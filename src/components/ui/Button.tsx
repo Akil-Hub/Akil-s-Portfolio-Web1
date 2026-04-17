@@ -6,9 +6,11 @@ interface ButtonProps {
   title?: string;
   size?: 'sm' | 'default' | 'lg';
   children?: React.ReactNode;
+  type?:string;
+  disabled?:boolean;
 }
 
-const Button = ({ className = '', onClick, title, size = 'default', children }: ButtonProps) => {
+const Button = ({ className = '', onClick, title,type,disabled, size = 'default', children }: ButtonProps) => {
   const baseClasses = 'relative overflow-hidden rounded-full font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25 active:scale-90 duration-200 transition-all '
   const sizeClasses = {
     sm: 'px-4 py-2 text-sm',

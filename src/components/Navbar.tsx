@@ -86,7 +86,7 @@ export const Navbar = () => {
             ))}
             {/* mobile cta */}
             <Link href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
-              <Button>Contact Me</Button>
+              <Button size="sm">Contact Me</Button>
             </Link>
           </div>
         </div>
