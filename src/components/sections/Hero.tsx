@@ -78,7 +78,7 @@ export const Hero = () => {
 
             {/* Headline */}
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
+              <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
                 Crafting <span className="text-primary glow-text">digital</span>
                 <br />
                 experiences with
@@ -87,7 +87,7 @@ export const Hero = () => {
                   precision.
                 </span>
               </h1>
-              <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
+              <p className="md:text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
                 Hi, I'm Akil Anjum Mahi — a Web Developer specializing in
                 React, Next.js, and javaScript. I build scalable, performant web
                 applications that users love.
@@ -95,7 +95,7 @@ export const Hero = () => {
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
+            <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300 justify-center md:justify-start">
              <Link href={'#contact'}> <Button size="lg">
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button></Link>
@@ -120,7 +120,7 @@ export const Hero = () => {
                   href={social.href}
                   className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
                 >
-                  {<social.icon className="w-5 h-5" />}
+                  {<social.icon className="w-7 h-6" />}
                 </a>
               ))}
             </div>
@@ -147,20 +147,20 @@ export const Hero = () => {
                 />
              
                 {/* Floating Badge */}
-                <div className="absolute -bottom-4  glass rounded-xl px-5
-                 w-108 py-3 animate-float">
-                  <div className="flex items-center gap-8 ">
+                <div className="absolute -bottom-4  glass rounded-xl md:px-5 px-2
+                 md:w-108 w-70 py-3 animate-float">
+                  <div className="flex items-center md:gap-8 gap-5 ">
 
-                   <div className="flex items-center gap-4">
+                   <div className="flex items-center md:gap-4 gap-2">
                      
                     <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                    <span className="text-2xl  font-serif italic font-medium ">
+                    <span className="md:text-2xl text-base  font-serif italic font-medium ">
                       Akil Anjum Mahi
                     </span>
                    </div>
 
 
-                    <span className="text-md font-medium italic">
+                    <span className="md:text-md text-xs font-medium italic">
                       Available for work
                     </span>
                   </div>
@@ -185,14 +185,14 @@ export const Hero = () => {
           <div className="relative overflow-hidden">
             <div
               className="absolute left-0 top-0 bottom-0 w-32
-             bg-gradient-to-r from-background to-transparent z-10"
+             bg-linear-to-r from-background to-transparent z-10"
             />
             <div
               className="absolute right-0 top-0 bottom-0 w-32
-             bg-gradient-to-l from-background to-transparent z-10"
+             bg-linear-to-l from-background to-transparent z-10"
             />
             <div className="flex animate-marquee">
-              {[...skills, ...skills].map((skill, idx) => (
+              {[...skills,...skills].map((skill, idx) => (
                 <div key={idx} className="flex-shrink-0 px-8 py-4">
                   <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
                     {skill}
