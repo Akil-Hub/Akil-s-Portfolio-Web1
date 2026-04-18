@@ -29,7 +29,7 @@ const ProjectCard = ({
     if (playPromise !== undefined) {
       playPromise.catch(() => {
         // Retry once silently
-        vid.muted = true;
+        vid.muted = false;
         vid.play().catch(() => {});
       });
     }
