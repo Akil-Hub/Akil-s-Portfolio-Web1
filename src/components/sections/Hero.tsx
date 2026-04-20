@@ -136,7 +136,7 @@ export const Hero = () => {
               />
               <div className="relative glass rounded-3xl p-2 glow-border w-full h-full">
                 <Image
-                  src="/akilEnhanced7.webp"
+                  src="/akilMahi2.png"
                   alt="Akil Mahi - Frontend Developer based in Dhaka Bangladesh"
                   width={1980}
                   height={2553}
