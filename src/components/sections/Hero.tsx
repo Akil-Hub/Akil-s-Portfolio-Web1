@@ -146,11 +146,11 @@ export const Hero = () => {
                 />
 
                 {/* Floating Badge */}
-                <div
-                  className="absolute -bottom-4  glass rounded-xl md:px-5 px-2
-                 md:w-108 w-full  py-3 animate-float"
+                <section
+                  className="absolute left-0 -bottom-4  glass rounded-xl md:px-5 px-2
+                 md:w-108 w-full mx-auto  py-3 animate-float"
                 >
-                  <div className="flex items-center justify-between md:gap-8 gap-5 px-10 md:px-0 ">
+                  <div className="flex items-center justify-between md:gap-8 gap-5 px-3 md:px-0">
                     <div className="flex items-center md:gap-4 gap-2">
                       <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
                       <span className="md:text-2xl text-base  font-serif italic font-medium ">
@@ -162,7 +162,7 @@ export const Hero = () => {
                       Available for work
                     </span>
                   </div>
-                </div>
+                </section>
                
               </div>
             </div>
