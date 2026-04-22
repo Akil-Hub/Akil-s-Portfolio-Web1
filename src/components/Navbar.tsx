@@ -31,7 +31,7 @@ export const Navbar = () => {
         isScrolled ? "glass-strong py-3" : "bg-transparent py-5"
       }  z-50`}
     >
-      <nav className="container mx-auto px-6 flex items-center justify-between">
+      <nav className="wrapper px-6 flex items-center justify-between">
         <a
           href="#"
           className="text-xl font-bold tracking-tight hover:text-primary"

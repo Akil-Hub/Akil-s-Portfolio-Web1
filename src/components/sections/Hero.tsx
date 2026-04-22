@@ -58,7 +58,7 @@ export const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
+      <div className="wrapper px-6 pt-32 pb-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
           <div className="space-y-8">
@@ -71,7 +71,7 @@ export const Hero = () => {
 
             {/* Headline */}
             <div className="space-y-4">
-              <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
+              <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-6xl font-bold leading-tight animate-fade-in animation-delay-100">
                 Crafting <span className="text-primary glow-text">digital</span>
                 <br />
                 experiences with
@@ -148,9 +148,9 @@ export const Hero = () => {
                 {/* Floating Badge */}
                 <div
                   className="absolute -bottom-4  glass rounded-xl md:px-5 px-2
-                 md:w-108 w-70 py-3 animate-float"
+                 w-108  py-3 animate-float"
                 >
-                  <div className="flex items-center md:gap-8 gap-5 ">
+                  <div className="flex items-center justify-between md:gap-8 gap-5 px-10 md:px-0 ">
                     <div className="flex items-center md:gap-4 gap-2">
                       <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
                       <span className="md:text-2xl text-base  font-serif italic font-medium ">
@@ -158,7 +158,7 @@ export const Hero = () => {
                       </span>
                     </div>
 
-                    <span className="md:text-md text-xs font-medium italic">
+                    <span className="md:text-[14px] text-xs font-medium italic">
                       Available for work
                     </span>
                   </div>

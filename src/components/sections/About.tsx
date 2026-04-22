@@ -29,7 +29,7 @@ const highlights = [
 export const About = () => {
   return (
     <section id="about" className="py-32 relative overflow-hidden">
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="wrapper px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Column */}
           <div className="space-y-8">
@@ -38,7 +38,7 @@ export const About = () => {
                 About Me
               </span>
             </div>
-
+developer
             <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
               Building the future,
               <span className="font-serif italic font-normal text-white">

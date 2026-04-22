@@ -22,7 +22,11 @@
   --color-highlight: #f5a623;
   --color-surface: #1a2329;
 }
-
+@layer components{
+  .wrapper{
+    @apply max-w-7xl mx-auto px-5 md:px-6 lg:px-8 
+  }
+}
 @layer base {
   html {
     scroll-behavior: smooth;

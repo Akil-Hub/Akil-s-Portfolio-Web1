@@ -51,7 +51,7 @@ export const Testimonials = () => {
         rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"
       />
       <section
-        className="container mx-auto 
+        className="wrapper 
       px-6 relative z-10"
       >
         {/* Section Header */}
