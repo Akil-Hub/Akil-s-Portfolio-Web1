@@ -147,7 +147,7 @@ export const Hero = () => {
 
                 {/* Floating Badge */}
                 <section
-                  className="absolute left-0 -bottom-4  glass rounded-xl md:px-5 px-2
+                  className="absolute left-1/2 -translate-x-1/2 -bottom-4  glass rounded-xl md:px-5 px-2
                  md:w-108 w-full mx-auto  py-3 animate-float"
                 >
                   <div className="flex items-center justify-between md:gap-8 gap-5 px-3 md:px-0">
