@@ -148,7 +148,7 @@ export const Hero = () => {
                 {/* Floating Badge */}
                 <div
                   className="absolute -bottom-4  glass rounded-xl md:px-5 px-2
-                 w-108  py-3 animate-float"
+                 md:w-108 w-full  py-3 animate-float"
                 >
                   <div className="flex items-center justify-between md:gap-8 gap-5 px-10 md:px-0 ">
                     <div className="flex items-center md:gap-4 gap-2">
