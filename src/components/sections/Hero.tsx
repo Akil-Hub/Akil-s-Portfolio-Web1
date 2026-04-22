@@ -33,6 +33,9 @@ export const Hero = () => {
           src="/hero-bg.jpg"
           alt="Hero image"
           fill
+          loading="eager"
+          priority
+          quality={97}
           className="w-full h-full object-cover opacity-40"
         />
         <div className="absolute inset-0 bg-linear-to-b from-background/20 via-background/80 to-background" />
@@ -163,7 +166,6 @@ export const Hero = () => {
                     </span>
                   </div>
                 </section>
-               
               </div>
             </div>
           </div>
