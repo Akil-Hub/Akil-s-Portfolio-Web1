@@ -26,7 +26,7 @@ const skills = [
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center overflow-hidden wrapper">
       {/* Bg */}
       <div className="absolute inset-0">
         <Image
@@ -58,8 +58,8 @@ export const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="wrapper px-6 pt-32 pb-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
           <div className="space-y-8">
             <div className="animate-fade-in">
